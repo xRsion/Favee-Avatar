@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Favee - トイフィギュアジェネレーター",
-  description: "あなたの写真をかわいいビニールトイフィギュア風に変換します",
+  title: "Favee風アバタージェネレーター",
+  description: "あなたの写真がかわいいFavee風キャラクターに変身します",
 };
 
 export default function RootLayout({
@@ -64,7 +64,7 @@ export default function RootLayout({
           </div>
 
           {/* Main content - scrollable, max 540px */}
-          <div className="w-full lg:w-[540px] lg:min-w-[540px] min-h-full flex flex-col bg-background relative">
+          <div className="w-full lg:w-[540px] lg:min-w-[540px] lg:h-screen lg:overflow-y-auto flex flex-col bg-background relative">
             {children}
           </div>
 

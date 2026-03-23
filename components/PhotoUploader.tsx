@@ -115,7 +115,7 @@ export default function PhotoUploader({ onUpload, hasImage }: PhotoUploaderProps
           <img
             src={preview}
             alt="アップロードされた写真"
-            className="w-full aspect-[3/4] object-cover"
+            className="w-full max-h-64 object-cover"
           />
           {/* Overlay on hover */}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
