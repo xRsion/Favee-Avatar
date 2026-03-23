@@ -21,9 +21,17 @@ Match the exact visual style of the reference figures including: face design (ey
 - Hairstyle and hair color
 - Clothing, accessories, shoes, and any text/branding on the outfit
 - If parts of the outfit are not visible in the photo, fill in with simple, plain clothing that matches the visible outfit's color and style
+- Distinctive features: if the person has any of the following that are clearly prominent and noticeable in the photo, reproduce them on the toy figure in a simplified, stylized way. Only include features that are obviously visible — ignore subtle, faint, or barely noticeable ones:
+  - Facial hair (beard, mustache, goatee) → only if thick, full, and clearly intentional. Do NOT reproduce light stubble, thin peach fuzz, or faint shadow
+  - Moles, beauty marks → only if clearly visible and prominent. Ignore tiny or faint ones
+  - Freckles → only if dense and a defining feature of the person's face
+  - Glasses → miniature toy-like style
+  - Piercings → only if clearly visible
+  - Scars → only if large and prominent
+  - Tattoos → only if clearly visible. Flat, simplified shapes keeping overall design, placement, and color
 
 **Rules:**
-- Face must be 100% identical across all characters regardless of age, gender, or ethnicity — only skin tone, hair, and clothing change
+- Face must be 100% identical across all characters regardless of age, gender, or ethnicity — only skin tone, hair, clothing, and distinctive features change
 - Skin must be completely smooth with ZERO wrinkles or age lines, regardless of the person's actual age
 - If eyebrows are visible in the person's photo, include them. If not, do not add them
 - Mouth must always be present — a small gentle smile, never omit it
