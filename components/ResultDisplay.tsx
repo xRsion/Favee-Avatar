@@ -38,7 +38,7 @@ export default function ResultDisplay({
           <div className="rounded-2xl overflow-hidden shadow-inner">
             <img
               src={dataUrl}
-              alt="生成されたFaveeアバター"
+              alt="生成されたFavee風アバター"
               className="w-full"
             />
           </div>

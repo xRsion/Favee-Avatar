@@ -83,18 +83,19 @@ export default function Home() {
       <div className="absolute -bottom-32 -left-32 w-64 h-64 blob-purple rounded-full pointer-events-none" />
 
       <div className="relative z-10 flex-1 flex flex-col">
+        {/* ===== COMMON HEADER ===== */}
+        <div className="flex flex-col items-center pt-12 pb-12 px-3">
+          <h1>
+            <img src="/favee_ja.png" alt="Favee" className="h-10 w-auto" />
+          </h1>
+          <p className="text-[11px] text-muted mt-1.5 font-medium tracking-wide">
+            AVATAR GENERATOR
+          </p>
+        </div>
+
         {/* ===== HERO SECTION ===== */}
         {(state === "idle" || state === "uploaded") && (
-          <section className="px-3 pt-12 pb-8">
-            {/* Logo */}
-            <div className="flex flex-col items-center mb-8">
-              <h1>
-                <img src="/favee_ja.png" alt="Favee" className="h-10 w-auto" />
-              </h1>
-              <p className="text-[11px] text-muted mt-1.5 font-medium tracking-wide">
-                AVATAR GENERATOR
-              </p>
-            </div>
+          <section className="px-3 pb-8">
 
             {/* Before → After showcase */}
             <div className="max-w-md mx-auto mb-6">
@@ -228,7 +229,7 @@ export default function Home() {
                     onClick={handleGenerate}
                     className="w-full py-4 bg-gradient-to-r from-primary to-accent text-white text-base font-bold rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
                   >
-                    フィギュアを生成する
+                    アバターを生成する
                   </button>
                 )}
               </div>
@@ -239,11 +240,7 @@ export default function Home() {
 
             {/* Result state */}
             {state === "result" && result && (
-              <div className="pt-6">
-                {/* Compact header for result */}
-                <div className="flex justify-center mb-5">
-                  <img src="/favee_ja.png" alt="Favee" className="h-8 w-auto" />
-                </div>
+              <div>
                 <ResultDisplay
                   imageBase64={result.imageBase64}
                   mimeType={result.mimeType}

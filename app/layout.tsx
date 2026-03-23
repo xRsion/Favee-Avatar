@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Favee風アバタージェネレーター",
-  description: "あなたの写真がかわいいFavee風キャラクターに変身します",
+  description: "あなたの写真がかわいいFavee風アバターに変身します",
 };
 
 export default function RootLayout({
