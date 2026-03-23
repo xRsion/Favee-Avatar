@@ -76,7 +76,7 @@ export default function RootLayout({
                 <div className="animate-scroll-down flex flex-col gap-4">
                   {[...Array(2)].map((_, setIdx) => (
                     <div key={setIdx} className="flex flex-col gap-4">
-                      {["/references/ref1.png", "/references/ref2.png", "/references/ref1.png", "/references/ref2.png", "/references/ref1.png", "/references/ref2.png"].map((src, i) => (
+                      {["/samples/sample1.jpeg", "/samples/sample3.jpeg", "/samples/sample5.jpeg", "/samples/sample7.jpeg", "/samples/sample9.jpeg", "/samples/sample11.jpeg"].map((src, i) => (
                         <div key={`${setIdx}-${i}`} className="w-36 h-36 rounded-2xl overflow-hidden shadow-md border-2 border-white/80 shrink-0">
                           <img src={src} alt="" className="w-full h-full object-cover" />
                         </div>
@@ -90,7 +90,7 @@ export default function RootLayout({
                 <div className="animate-scroll-up flex flex-col gap-4">
                   {[...Array(2)].map((_, setIdx) => (
                     <div key={setIdx} className="flex flex-col gap-4">
-                      {["/references/ref2.png", "/references/ref1.png", "/references/ref2.png", "/references/ref1.png", "/references/ref2.png", "/references/ref1.png"].map((src, i) => (
+                      {["/samples/sample4.jpeg", "/samples/sample6.jpeg", "/samples/sample8.jpeg", "/samples/sample10.jpeg", "/samples/sample12.jpeg"].map((src, i) => (
                         <div key={`${setIdx}-${i}`} className="w-36 h-36 rounded-2xl overflow-hidden shadow-md border-2 border-white/80 shrink-0">
                           <img src={src} alt="" className="w-full h-full object-cover" />
                         </div>
