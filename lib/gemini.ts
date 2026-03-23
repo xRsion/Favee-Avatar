@@ -100,6 +100,10 @@ export async function generateToyFigure(
     ],
     config: {
       responseModalities: ["TEXT", "IMAGE"],
+      imageConfig: {
+        aspectRatio: "1:1",   // 正方形で固定
+        imageSize: "1K",       // 解像度
+      }
     },
   });
 
