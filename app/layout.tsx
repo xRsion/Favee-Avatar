@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="ja" className="h-full antialiased">
       <body className="h-full">
         {/* PC: 3-column layout with fixed sidebars */}
-        <div className="h-full flex">
+        <div className="h-full flex overflow-hidden">
           {/* Left sidebar - Favee app promotion */}
           <div className="hidden lg:flex lg:flex-1 bg-sidebar sticky top-0 h-screen items-center justify-end">
             <div className="w-full max-w-[380px] pr-12 pl-8">

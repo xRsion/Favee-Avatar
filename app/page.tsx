@@ -82,11 +82,11 @@ export default function Home() {
   const currentStep = state === "idle" ? 0 : state === "uploaded" ? 1 : state === "generating" ? 2 : 3;
 
   return (
-    <main className="flex-1 flex flex-col relative overflow-hidden">
+    <main className="flex-1 flex flex-col relative overflow-x-hidden">
       {/* Background decorations - contained within main column */}
       <div className="absolute inset-0 bg-dots opacity-40 pointer-events-none" />
       <div className="absolute -top-32 -right-32 w-64 h-64 blob-orange rounded-full pointer-events-none" />
-      <div className="absolute -bottom-32 -left-32 w-64 h-64 blob-purple rounded-full pointer-events-none" />
+      <div className="fixed -bottom-32 -left-32 w-64 h-64 blob-purple rounded-full pointer-events-none lg:hidden" />
 
       <div className="relative z-10 flex-1 flex flex-col">
         {/* ===== COMMON HEADER ===== */}
