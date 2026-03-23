@@ -68,8 +68,39 @@ export default function RootLayout({
             {children}
           </div>
 
-          {/* Right sidebar - fixed, hidden on mobile */}
-          <div className="hidden lg:block lg:flex-1 bg-sidebar sticky top-0 h-screen" />
+          {/* Right sidebar - scrolling avatar gallery */}
+          <div className="hidden lg:flex lg:flex-1 bg-sidebar sticky top-0 h-screen overflow-hidden items-center justify-center">
+            <div className="flex gap-10 h-full">
+              {/* Column 1 - scrolls down */}
+              <div className="w-36 overflow-hidden">
+                <div className="animate-scroll-down flex flex-col gap-4">
+                  {[...Array(2)].map((_, setIdx) => (
+                    <div key={setIdx} className="flex flex-col gap-4">
+                      {["/references/ref1.png", "/references/ref2.png", "/references/ref1.png", "/references/ref2.png", "/references/ref1.png", "/references/ref2.png"].map((src, i) => (
+                        <div key={`${setIdx}-${i}`} className="w-36 h-36 rounded-2xl overflow-hidden shadow-md border-2 border-white/80 shrink-0">
+                          <img src={src} alt="" className="w-full h-full object-cover" />
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {/* Column 2 - scrolls up */}
+              <div className="w-36 overflow-hidden">
+                <div className="animate-scroll-up flex flex-col gap-4">
+                  {[...Array(2)].map((_, setIdx) => (
+                    <div key={setIdx} className="flex flex-col gap-4">
+                      {["/references/ref2.png", "/references/ref1.png", "/references/ref2.png", "/references/ref1.png", "/references/ref2.png", "/references/ref1.png"].map((src, i) => (
+                        <div key={`${setIdx}-${i}`} className="w-36 h-36 rounded-2xl overflow-hidden shadow-md border-2 border-white/80 shrink-0">
+                          <img src={src} alt="" className="w-full h-full object-cover" />
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </body>
     </html>

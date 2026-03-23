@@ -87,14 +87,12 @@ export default function Home() {
         {(state === "idle" || state === "uploaded") && (
           <section className="px-3 pt-12 pb-8">
             {/* Logo */}
-            <div className="text-center mb-8">
-              <h1 className="text-3xl font-black tracking-tight">
-                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  Favee
-                </span>
+            <div className="flex flex-col items-center mb-8">
+              <h1>
+                <img src="/favee_ja.png" alt="Favee" className="h-10 w-auto" />
               </h1>
-              <p className="text-[11px] text-muted mt-0.5 font-medium tracking-wide">
-                TOY FIGURE GENERATOR
+              <p className="text-[11px] text-muted mt-1.5 font-medium tracking-wide">
+                AVATAR GENERATOR
               </p>
             </div>
 
@@ -243,12 +241,8 @@ export default function Home() {
             {state === "result" && result && (
               <div className="pt-6">
                 {/* Compact header for result */}
-                <div className="text-center mb-5">
-                  <h1 className="text-2xl font-black">
-                    <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                      Favee
-                    </span>
-                  </h1>
+                <div className="flex justify-center mb-5">
+                  <img src="/favee_ja.png" alt="Favee" className="h-8 w-auto" />
                 </div>
                 <ResultDisplay
                   imageBase64={result.imageBase64}
