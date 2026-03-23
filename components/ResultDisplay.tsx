@@ -84,6 +84,9 @@ export default function ResultDisplay({
 
       {/* ===== Favee App CTA Banner ===== */}
       <div className="w-full mt-2 p-4 rounded-2xl bg-gradient-to-br from-foreground/[0.03] to-foreground/[0.06] border border-foreground/5">
+        <p className="text-sm font-bold text-foreground/80 leading-relaxed mb-2.5">
+          手のひらに、<br />もう一つのマイルームを。
+        </p>
         <img src="/favee_ja.png" alt="Favee" className="h-8 w-auto mb-2.5" />
         <p className="text-[12px] font-bold text-foreground/70 mb-1">
           デジタルグッズを「集める・飾る・見せる」
