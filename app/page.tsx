@@ -85,7 +85,7 @@ export default function Home() {
       <div className="relative z-10 flex-1 flex flex-col">
         {/* ===== HERO SECTION ===== */}
         {(state === "idle" || state === "uploaded") && (
-          <section className="px-5 pt-12 pb-8">
+          <section className="px-3 pt-12 pb-8">
             {/* Logo */}
             <div className="text-center mb-8">
               <h1 className="text-3xl font-black tracking-tight">
@@ -99,11 +99,11 @@ export default function Home() {
             </div>
 
             {/* Before → After showcase */}
-            <div className="max-w-sm mx-auto mb-6">
+            <div className="max-w-md mx-auto mb-6">
               <div className="flex items-center justify-center gap-3">
                 {/* Before */}
                 <div className="flex flex-col items-center gap-1.5">
-                  <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md border-2 border-white bg-gray-100">
+                  <div className="w-32 h-32 rounded-2xl overflow-hidden shadow-md border-2 border-white bg-gray-100">
                     <img
                       src="/examples/before.png"
                       alt="変身前の写真"
@@ -126,9 +126,9 @@ export default function Home() {
 
                 {/* After */}
                 <div className="flex flex-col items-center gap-1.5">
-                  <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md border-2 border-white animate-float">
+                  <div className="w-32 h-32 rounded-2xl overflow-hidden shadow-md border-2 border-white animate-float">
                     <img
-                      src="/references/ref1.png"
+                      src="/examples/after.jpeg"
                       alt="完成フィギュアの例"
                       className="w-full h-full object-cover"
                     />
@@ -140,9 +140,9 @@ export default function Home() {
 
             {/* Catchcopy */}
             <div className="text-center mb-6">
-              <h2 className="text-lg font-bold text-foreground/85 leading-relaxed">
+              <h2 className="text-xl font-bold text-foreground/85 leading-relaxed">
                 あなたの写真が<br />
-                <span className="text-primary">Favee風アバター</span>に大変身
+                <span className="text-primary">Favee風アバター</span>に大変身！
               </h2>
               <p className="text-xs text-muted mt-2 leading-relaxed">
                 写真を1枚アップロードするだけで<br />
@@ -152,7 +152,7 @@ export default function Home() {
 
             {/* CTA if no image yet */}
             {state === "idle" && (
-              <div className="max-w-xs mx-auto">
+              <div className="max-w-md mx-auto">
                 <button
                   onClick={scrollToUpload}
                   className="w-full py-3.5 bg-gradient-to-r from-primary to-accent text-white text-sm font-bold rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
@@ -166,8 +166,8 @@ export default function Home() {
 
         {/* ===== STEP INDICATOR ===== */}
         {state !== "result" && (
-          <div className="px-5 py-4">
-            <div className="max-w-xs mx-auto flex items-center justify-between">
+          <div className="px-3 py-4">
+            <div className="max-w-md mx-auto flex items-center justify-between">
               {[
                 { num: 1, label: "写真を選ぶ" },
                 { num: 2, label: "生成中" },
@@ -208,8 +208,8 @@ export default function Home() {
         )}
 
         {/* ===== MAIN CONTENT ===== */}
-        <div className="flex-1 px-5 pb-8">
-          <div className="max-w-sm mx-auto">
+        <div className="flex-1 px-3 pb-8">
+          <div className="max-w-md mx-auto">
 
             {/* Upload state */}
             {(state === "idle" || state === "uploaded") && (
@@ -261,8 +261,8 @@ export default function Home() {
         </div>
 
         {/* ===== FOOTER ===== */}
-        <footer className="py-5 px-5">
-          <div className="max-w-sm mx-auto flex items-center justify-between">
+        <footer className="py-5 px-3">
+          <div className="max-w-md mx-auto flex items-center justify-between">
             <p className="text-[10px] text-muted/40 font-medium">
               &copy; Favee
             </p>

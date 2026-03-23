@@ -44,7 +44,7 @@ export default function RootLayout({
               </p>
               <div className="flex items-center gap-2.5">
                 <a
-                  href="https://favee.app/"
+                  href="https://apps.apple.com/app/id6756901256"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block hover:opacity-85 transition-opacity"
@@ -52,7 +52,7 @@ export default function RootLayout({
                   <img src="/app-store.png" alt="App Storeからダウンロード" className="h-10 w-auto" />
                 </a>
                 <a
-                  href="https://favee.app/"
+                  href="https://play.google.com/store/apps/details?id=jp.co.xrsion.favee"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block hover:opacity-85 transition-opacity"

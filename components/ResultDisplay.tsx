@@ -83,31 +83,27 @@ export default function ResultDisplay({
       </div>
 
       {/* ===== Favee App CTA Banner ===== */}
-      <a
-        href="https://favee.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full mt-2 p-4 rounded-2xl bg-gradient-to-br from-foreground/[0.03] to-foreground/[0.06] border border-foreground/5 hover:border-primary/30 hover:shadow-md transition-all group"
-      >
-        <div className="flex items-center gap-3.5">
-          {/* App icon */}
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
-            <span className="text-white text-lg font-black">F</span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-bold text-foreground/80">
-              Faveeアプリで もっと楽しもう
-            </p>
-            <p className="text-[11px] text-muted mt-0.5 leading-snug">
-              アバターを使った推し活をはじめよう
-            </p>
-          </div>
-          {/* Arrow */}
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-muted/40 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0">
-            <polyline points="9 18 15 12 9 6" />
-          </svg>
+      <div className="w-full mt-2 p-4 rounded-2xl bg-gradient-to-br from-foreground/[0.03] to-foreground/[0.06] border border-foreground/5">
+        <img src="/favee_ja.png" alt="Favee" className="h-8 w-auto mb-2.5" />
+        <p className="text-[12px] font-bold text-foreground/70 mb-1">
+          デジタルグッズを「集める・飾る・見せる」
+        </p>
+        <p className="text-[11px] text-muted leading-relaxed mb-3">
+          リアルな空間に収まりきらない「好き」を、<br />
+          スマホの中のもう一つの部屋へ
+        </p>
+        <p className="text-[10px] font-bold text-foreground/40 mb-2">
+          まずは無料でダウンロード
+        </p>
+        <div className="flex items-center gap-2">
+          <a href="https://apps.apple.com/app/id6756901256" target="_blank" rel="noopener noreferrer" className="block hover:opacity-85 transition-opacity">
+            <img src="/app-store.png" alt="App Storeからダウンロード" className="h-9 w-auto" />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=jp.co.xrsion.favee" target="_blank" rel="noopener noreferrer" className="block hover:opacity-85 transition-opacity">
+            <img src="/google-play.png" alt="Google Playで手に入れよう" className="h-9 w-auto" />
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   );
 }
