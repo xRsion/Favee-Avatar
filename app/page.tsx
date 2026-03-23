@@ -77,10 +77,10 @@ export default function Home() {
 
   return (
     <main className="flex-1 flex flex-col relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="fixed inset-0 bg-dots opacity-40 pointer-events-none" />
-      <div className="fixed -top-32 -right-32 w-64 h-64 blob-orange rounded-full pointer-events-none" />
-      <div className="fixed -bottom-32 -left-32 w-64 h-64 blob-purple rounded-full pointer-events-none" />
+      {/* Background decorations - contained within main column */}
+      <div className="absolute inset-0 bg-dots opacity-40 pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-64 h-64 blob-orange rounded-full pointer-events-none" />
+      <div className="absolute -bottom-32 -left-32 w-64 h-64 blob-purple rounded-full pointer-events-none" />
 
       <div className="relative z-10 flex-1 flex flex-col">
         {/* ===== HERO SECTION ===== */}
@@ -106,7 +106,7 @@ export default function Home() {
                   <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md border-2 border-white bg-gray-100">
                     <img
                       src="/examples/before.png"
-                      alt="変換前の写真"
+                      alt="変身前の写真"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -121,7 +121,7 @@ export default function Home() {
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
                   </div>
-                  <span className="text-[9px] text-muted/60 font-bold">AI</span>
+                  <span className="text-[9px] text-muted/60 font-bold">変身</span>
                 </div>
 
                 {/* After */}
@@ -133,7 +133,7 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="text-[10px] text-primary font-bold">フィギュア化！</span>
+                  <span className="text-[10px] text-primary font-bold">Faveeアバター！</span>
                 </div>
               </div>
             </div>
@@ -141,12 +141,12 @@ export default function Home() {
             {/* Catchcopy */}
             <div className="text-center mb-6">
               <h2 className="text-lg font-bold text-foreground/85 leading-relaxed">
-                あなたの写真を<br />
-                <span className="text-primary">かわいいフィギュア</span>に変身
+                あなたの写真が<br />
+                <span className="text-primary">Favee風アバター</span>に大変身
               </h2>
               <p className="text-xs text-muted mt-2 leading-relaxed">
                 写真を1枚アップロードするだけで<br />
-                AIがオリジナルのトイフィギュアを生成します
+                あなただけのアバターが完成します
               </p>
             </div>
 
@@ -170,7 +170,7 @@ export default function Home() {
             <div className="max-w-xs mx-auto flex items-center justify-between">
               {[
                 { num: 1, label: "写真を選ぶ" },
-                { num: 2, label: "AI生成" },
+                { num: 2, label: "生成中" },
                 { num: 3, label: "完成！" },
               ].map((step, i) => (
                 <div key={step.num} className="flex items-center">
@@ -261,10 +261,25 @@ export default function Home() {
         </div>
 
         {/* ===== FOOTER ===== */}
-        <footer className="py-4 text-center">
-          <p className="text-[10px] text-muted/40 font-medium">
-            Powered by Gemini AI &middot; Favee
-          </p>
+        <footer className="py-5 px-5">
+          <div className="max-w-sm mx-auto flex items-center justify-between">
+            <p className="text-[10px] text-muted/40 font-medium">
+              &copy; Favee
+            </p>
+            <a
+              href="https://favee.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[10px] text-muted/40 font-medium hover:text-primary transition-colors flex items-center gap-1"
+            >
+              Faveeアプリ
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
         </footer>
       </div>
     </main>

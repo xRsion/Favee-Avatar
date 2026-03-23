@@ -17,7 +17,7 @@ export default function ResultDisplay({
     const link = document.createElement("a");
     link.href = dataUrl;
     const ext = mimeType.split("/")[1] || "png";
-    link.download = `favee-figure.${ext}`;
+    link.download = `favee-avatar.${ext}`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -38,7 +38,7 @@ export default function ResultDisplay({
           <div className="rounded-2xl overflow-hidden shadow-inner">
             <img
               src={dataUrl}
-              alt="生成されたトイフィギュア"
+              alt="生成されたFaveeアバター"
               className="w-full"
             />
           </div>
@@ -47,8 +47,8 @@ export default function ResultDisplay({
         {/* Bottom info */}
         <div className="px-5 pb-5 flex items-center justify-between">
           <div>
-            <p className="text-xs font-bold text-foreground/70">Your Custom Figure</p>
-            <p className="text-[10px] text-muted mt-0.5">Powered by AI</p>
+            <p className="text-xs font-bold text-foreground/70">Your Favee Avatar</p>
+            <p className="text-[10px] text-muted mt-0.5">Made with Favee</p>
           </div>
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
             <span className="text-sm">✨</span>
@@ -81,6 +81,33 @@ export default function ResultDisplay({
           <span className="text-sm">もう一度</span>
         </button>
       </div>
+
+      {/* ===== Favee App CTA Banner ===== */}
+      <a
+        href="https://favee.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full mt-2 p-4 rounded-2xl bg-gradient-to-br from-foreground/[0.03] to-foreground/[0.06] border border-foreground/5 hover:border-primary/30 hover:shadow-md transition-all group"
+      >
+        <div className="flex items-center gap-3.5">
+          {/* App icon */}
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
+            <span className="text-white text-lg font-black">F</span>
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-bold text-foreground/80">
+              Faveeアプリで もっと楽しもう
+            </p>
+            <p className="text-[11px] text-muted mt-0.5 leading-snug">
+              アバターを使った推し活をはじめよう
+            </p>
+          </div>
+          {/* Arrow */}
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-muted/40 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+      </a>
     </div>
   );
 }
