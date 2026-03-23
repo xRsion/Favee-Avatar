@@ -17,7 +17,7 @@ Match the exact visual style of the reference figures including: face design (ey
 - Do NOT take skin color from the references — skin tone must come only from the person's photo
 
 **What to take from the PERSON's photo:**
-- Skin tone — THIS IS CRITICAL: match the person's exact skin tone from their photo, do NOT borrow or blend skin color from the reference toy figures. The references are for style only, never for skin color
+- Skin tone — THIS IS CRITICAL AND THE HIGHEST PRIORITY RULE: match the person's exact natural skin tone from their photo. Do NOT borrow or blend skin color from the reference toy figures. The references contain characters with different skin tones — IGNORE all skin colors in the reference images completely. Analyze ONLY the person's photo to determine skin tone. If the person's photo has poor lighting, shadows, or dim conditions, estimate their natural skin tone under normal daylight — do not darken the skin due to lighting conditions in the photo
 - Hairstyle and hair color
 - Clothing, accessories, shoes, and any text/branding on the outfit
 - If parts of the outfit are not visible in the photo, fill in with simple, plain clothing that matches the visible outfit's color and style
@@ -41,7 +41,8 @@ Match the exact visual style of the reference figures including: face design (ey
 
 **Do NOT:**
 - Do NOT change or interpret the face design — copy it exactly from the references
-- Do NOT copy skin color from the reference images — always use the person's actual skin tone
+- Do NOT copy skin color from the reference images — always use the person's actual natural skin tone
+- Do NOT darken skin tone due to shadows or poor lighting in the person's photo
 - Do NOT omit the mouth or eyebrows
 - No wrinkles, age lines, or skin texture
 - No eyelashes
