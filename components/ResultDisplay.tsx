@@ -13,10 +13,31 @@ export default function ResultDisplay({
 }: ResultDisplayProps) {
   const dataUrl = `data:${mimeType};base64,${imageBase64}`;
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
+    const ext = mimeType.split("/")[1] || "png";
+
+    // Convert base64 to blob
+    const byteChars = atob(imageBase64);
+    const byteArray = new Uint8Array(byteChars.length);
+    for (let i = 0; i < byteChars.length; i++) {
+      byteArray[i] = byteChars.charCodeAt(i);
+    }
+    const blob = new Blob([byteArray], { type: mimeType });
+    const file = new File([blob], `favee-avatar.${ext}`, { type: mimeType });
+
+    // Mobile: use Web Share API to allow saving to photo library
+    if (navigator.share && navigator.canShare?.({ files: [file] })) {
+      try {
+        await navigator.share({ files: [file] });
+        return;
+      } catch {
+        // User cancelled or share failed, fall through to download
+      }
+    }
+
+    // Desktop fallback: standard download
     const link = document.createElement("a");
     link.href = dataUrl;
-    const ext = mimeType.split("/")[1] || "png";
     link.download = `favee-avatar.${ext}`;
     document.body.appendChild(link);
     link.click();
