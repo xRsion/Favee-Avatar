@@ -92,7 +92,9 @@ export default function Home() {
         {/* ===== COMMON HEADER ===== */}
         <div className="flex flex-col items-center pt-12 pb-12 px-3">
           <h1>
-            <img src="/favee_ja.png" alt="Favee" className="h-10 w-auto" />
+            <a href="/" onClick={(e) => { e.preventDefault(); handleReset(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="block hover:opacity-80 transition-opacity">
+              <img src="/favee_ja.png" alt="Favee" className="h-10 w-auto" />
+            </a>
           </h1>
           <p className="text-[11px] text-muted mt-1.5 font-medium tracking-wide">
             AVATAR GENERATOR
