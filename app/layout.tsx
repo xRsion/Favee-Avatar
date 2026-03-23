@@ -3,7 +3,30 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Favee風アバタージェネレーター",
-  description: "あなたの写真がかわいいFavee風アバターに変身します",
+  description: "あなたの写真がかわいいFavee風アバターに大変身！写真を1枚アップロードするだけで、あなただけのオリジナルアバターが完成します。",
+  metadataBase: new URL("https://avatar.favee.app"),
+  openGraph: {
+    title: "Favee風アバタージェネレーター",
+    description: "あなたの写真がかわいいFavee風アバターに大変身！",
+    url: "https://avatar.favee.app",
+    siteName: "Favee Avatar Generator",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Favee風アバタージェネレーター",
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Favee風アバタージェネレーター",
+    description: "あなたの写真がかわいいFavee風アバターに大変身！",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -76,7 +99,7 @@ export default function RootLayout({
                 <div className="animate-scroll-down flex flex-col gap-4">
                   {[...Array(2)].map((_, setIdx) => (
                     <div key={setIdx} className="flex flex-col gap-4">
-                      {["/samples/sample1.jpeg", "/samples/sample3.jpeg", "/samples/sample5.jpeg", "/samples/sample7.jpeg", "/samples/sample9.jpeg", "/samples/sample11.jpeg"].map((src, i) => (
+                      {["/samples/sample1.jpeg", "/samples/sample3.jpeg", "/samples/sample5.jpeg", "/samples/sample7.jpeg", "/samples/sample9.jpeg", "/samples/sample11.jpeg", "/samples/sample2.jpeg"].map((src, i) => (
                         <div key={`${setIdx}-${i}`} className="w-36 h-36 rounded-2xl overflow-hidden shadow-md border-2 border-white/80 shrink-0">
                           <img src={src} alt="" className="w-full h-full object-cover" />
                         </div>
