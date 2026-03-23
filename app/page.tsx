@@ -1,9 +1,15 @@
 "use client";
 
+import nextDynamic from "next/dynamic";
 import { useState, useCallback, useRef } from "react";
 import PhotoUploader from "@/components/PhotoUploader";
 import GeneratingLoader from "@/components/GeneratingLoader";
-import ResultDisplay from "@/components/ResultDisplay";
+
+const ResultDisplay = nextDynamic(() => import("@/components/ResultDisplay"), {
+  ssr: false,
+});
+
+export const dynamic = "force-dynamic";
 
 type AppState = "idle" | "uploaded" | "generating" | "result";
 
