@@ -34,6 +34,15 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* Hide all scrollbars globally */
+*::-webkit-scrollbar {
+  display: none !important;
+}
+* {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
 /* Dot pattern background */
 .bg-dots {
   background-image: radial-gradient(circle, #f0d9c8 1px, transparent 1px);

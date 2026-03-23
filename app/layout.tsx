@@ -64,7 +64,7 @@ export default function RootLayout({
           </div>
 
           {/* Main content - scrollable, max 540px */}
-          <div className="w-full lg:w-[540px] lg:min-w-[540px] lg:h-screen lg:overflow-y-auto flex flex-col bg-background relative">
+          <div data-main-scroll className="w-full lg:w-[540px] lg:min-w-[540px] lg:h-screen lg:overflow-y-auto scrollbar-hide flex flex-col bg-background relative">
             {children}
           </div>
 
