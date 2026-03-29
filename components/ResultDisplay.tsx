@@ -56,7 +56,7 @@ export default function ResultDisplay({
 
         {/* Image area */}
         <div className="p-5 pb-4 bg-gradient-to-b from-gray-50/50 to-white">
-          <div className="rounded-2xl overflow-hidden shadow-inner">
+          <div className="overflow-hidden shadow-inner">
             <img
               src={dataUrl}
               alt="生成されたFavee風アバター"
