@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Favee風アバタージェネレーター",
-  description: "あなたの写真がかわいいFavee風アバターに大変身！写真を1枚アップロードするだけで、あなただけのオリジナルアバターが完成します。",
+  title: "Favee Maker",
+  description: "あなたの写真がかわいいFavee風のキャラクターに大変身！写真を1枚アップロードするだけで、あなただけのオリジナルキャラクターが完成します。",
   metadataBase: new URL("https://avatar.favee.app"),
   openGraph: {
-    title: "Favee風アバタージェネレーター",
-    description: "あなたの写真がかわいいFavee風アバターに大変身！",
+    title: "Favee Maker",
+    description: "あなたの写真がかわいいFavee風のキャラクターに大変身！",
     url: "https://avatar.favee.app",
     siteName: "Favee Avatar Generator",
     images: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Favee風アバタージェネレーター",
+        alt: "Favee Maker",
       },
     ],
     locale: "ja_JP",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Favee風アバタージェネレーター",
-    description: "あなたの写真がかわいいFavee風アバターに大変身！",
+    title: "Favee Maker",
+    description: "あなたの写真がかわいいFavee風のキャラクターに大変身！",
     images: ["/og-image.png"],
   },
 };

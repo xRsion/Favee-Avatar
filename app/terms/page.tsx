@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "利用規約 - Favee風アバタージェネレーター",
+  title: "利用規約 - Favee Maker",
 };
 
 export default function TermsPage() {
@@ -13,14 +13,14 @@ export default function TermsPage() {
         <section>
           <h2 className="text-base font-bold text-foreground mb-3">第1条（適用）</h2>
           <p>
-            本利用規約（以下「本規約」）は、株式会社（以下「当社」）が提供するFavee風アバタージェネレーター（以下「本サービス」）の利用条件を定めるものです。ユーザーの皆様には、本規約に同意のうえ、本サービスをご利用いただきます。
+            本利用規約（以下「本規約」）は、株式会社（以下「当社」）が提供するFavee Maker（以下「本サービス」）の利用条件を定めるものです。ユーザーの皆様には、本規約に同意のうえ、本サービスをご利用いただきます。
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-bold text-foreground mb-3">第2条（サービス内容）</h2>
           <ol className="list-decimal pl-5 space-y-2">
-            <li>本サービスは、ユーザーがアップロードした写真をもとに、AIを活用してFavee風のアバター画像を生成するサービスです。</li>
+            <li>本サービスは、ユーザーがアップロードした写真をもとに、AIを活用してFavee風のキャラクター画像を生成するサービスです。</li>
             <li>生成される画像の品質・内容について、当社は一切の保証を行いません。</li>
             <li>本サービスは予告なく変更、中断、または終了する場合があります。</li>
           </ol>
@@ -38,7 +38,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-base font-bold text-foreground mb-3">第4条（アップロード画像の取り扱い）</h2>
           <ol className="list-decimal pl-5 space-y-2">
-            <li>ユーザーがアップロードした写真は、アバター画像の生成処理にのみ使用され、生成完了後にサーバーから速やかに削除されます。</li>
+            <li>ユーザーがアップロードした写真は、キャラクター画像の生成処理にのみ使用され、生成完了後にサーバーから速やかに削除されます。</li>
             <li>当社は、アップロードされた写真を保存、蓄積、または二次利用することはありません。</li>
             <li>ただし、画像生成にはGoogle Gemini APIを使用しており、送信されたデータはGoogleのAPIサービス利用規約に従って処理されます。</li>
           </ol>
@@ -47,7 +47,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-base font-bold text-foreground mb-3">第5条（生成画像の権利）</h2>
           <ol className="list-decimal pl-5 space-y-2">
-            <li>生成されたアバター画像は、ユーザーが個人的な用途で自由にご利用いただけます。</li>
+            <li>生成されたキャラクター画像は、ユーザーが個人的な用途で自由にご利用いただけます。</li>
             <li>生成画像の商用利用については、当社の事前の書面による許諾が必要です。</li>
             <li>生成画像にはAIによるウォーターマーク（SynthID）が含まれる場合があります。</li>
           </ol>

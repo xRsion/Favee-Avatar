@@ -59,7 +59,7 @@ export default function ResultDisplay({
           <div className="overflow-hidden shadow-inner">
             <img
               src={dataUrl}
-              alt="生成されたFavee風アバター"
+              alt="生成されたFavee風キャラクター"
               className="w-full"
             />
           </div>

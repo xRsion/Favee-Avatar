@@ -140,7 +140,7 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="text-[10px] text-primary font-bold">Faveeアバター！</span>
+                  <span className="text-[10px] text-primary font-bold">Faveeキャラクター！</span>
                 </div>
               </div>
             </div>
@@ -149,11 +149,11 @@ export default function Home() {
             <div className="text-center mb-6">
               <h2 className="text-xl font-bold text-foreground/85 leading-relaxed">
                 あなたの写真が<br />
-                <span className="text-primary">Favee風アバター</span>に大変身！
+                <span className="text-primary">Favee風キャラクター</span>に大変身！
               </h2>
               <p className="text-xs text-muted mt-2 leading-relaxed">
                 写真を1枚アップロードするだけで<br />
-                あなただけのアバターが完成します
+                あなただけのキャラクターが完成します
               </p>
             </div>
 
@@ -237,7 +237,7 @@ export default function Home() {
                     onClick={handleGenerate}
                     className="w-full py-4 bg-gradient-to-r from-primary to-accent text-white text-base font-bold rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
                   >
-                    アバターを生成する
+                    キャラクターを生成する
                   </button>
                 )}
               </div>
