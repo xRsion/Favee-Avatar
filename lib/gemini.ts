@@ -4,12 +4,15 @@ import path from "path";
 
 const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY! });
 
-export const PROMPT_TEXT = `The first two images are REFERENCE toy figures — use them as the PRIMARY style guide. The third image is the PERSON to transform.
+export const PROMPT_TEXT = `⚠️ ABSOLUTE RULE — READ THIS FIRST:
+The face (eyes, nose, mouth) must be an EXACT COPY from the reference toy figures. These facial features are like a fixed mold shared by all characters in this product line — they NEVER change regardless of what the person in the photo looks like. Do NOT adapt, resize, reshape, or reinterpret any facial features based on the person's photo. The person's actual eye shape, nose shape, mouth shape must be completely ignored — only copy from the references.
+
+The first two images are REFERENCE toy figures — use them as the PRIMARY style guide. The third image is the PERSON to transform.
 
 Match the exact visual style of the reference figures including: face design (eyes, nose, mouth, eyebrows), head-to-body proportions, body shape, and overall matte vinyl toy aesthetic. Then apply that style to the person in the third image.
 
 **What to take from the REFERENCE images:**
-- Face: replicate the exact same eye shape, eye size, eye spacing, nose, mouth, and eyebrow style from the references — every character must have the same face as the references
+- Face: replicate the exact same eye shape, eye size, eye spacing, nose, mouth, and eyebrow style from the references — these are a fixed template, like a factory mold, that must be stamped identically onto every character
 - Body proportions: match the same head-to-body ratio and limb length as the references
 - Body shape: match the same slim, compact build as the references
 - Surface finish: match the same matte skin and clothing texture as the references
@@ -29,6 +32,7 @@ Match the exact visual style of the reference figures including: face design (ey
   - Piercings → only if clearly visible
   - Scars → only if large and prominent
   - Tattoos → only if clearly visible. Flat, simplified shapes keeping overall design, placement, and color
+- Do NOT take eye shape, nose shape, or mouth shape from the person's photo — these always come from the reference only
 
 **Rules:**
 - Face must be 100% identical across all characters regardless of age, gender, or ethnicity — only skin tone, hair, clothing, and distinctive features change
@@ -41,6 +45,7 @@ Match the exact visual style of the reference figures including: face design (ey
 
 **Do NOT:**
 - Do NOT change or interpret the face design — copy it exactly from the references
+- Do NOT adapt eyes, nose, or mouth based on the person's photo — the face is a fixed mold
 - Do NOT copy skin color from the reference images — always use the person's actual natural skin tone
 - Do NOT darken skin tone due to shadows or poor lighting in the person's photo
 - Do NOT omit the mouth or eyebrows
